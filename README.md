@@ -33,8 +33,8 @@ Variabel yang berubah: Dalam kode ini, variabel yang berubah adalah isHovered, y
 
 
 Bagaimana cara mengimplementasikan checklist-checklist di atas:
-Berikut adalah langkah-langkah yang telah dilakukan dalam membangun aplikasi ini:
 
+Berikut adalah langkah-langkah yang telah dilakukan dalam membangun aplikasi ini:
 1) Menjalankan perintah flutter create alatas_survival untuk membuat direktori proyek baru dengan nama alatas_survival.
 2) Membuat file .dart di dalam folder alatas_survival/lib guna mengelola tampilan. Struktur file dipisahkan menjadi main.dart untuk tampilan utama dan menu.dart untuk menu interaksi.
 3) Untuk menampilkan informasi pengguna seperti NPM, nama, dan kelas, saya menggunakan widget InfoCard, yang bersifat statis. Sementara itu, widget HoverableItemCard digunakan untuk menampilkan item yang berubah tampilan saat mouse berada di atasnya.
