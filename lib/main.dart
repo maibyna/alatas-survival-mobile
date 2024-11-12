@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:alatas_survival/menu.dart';
+import 'package:alatas_survival/screens/menu.dart';
+import 'package:alatas_survival/screens/alentry_form.dart';
+import 'package:alatas_survival/widgets/al_card.dart';
+import 'package:alatas_survival/widgets/left_drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
