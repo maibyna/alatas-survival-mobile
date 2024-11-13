@@ -78,7 +78,7 @@ class _AlEntryFormPageState extends State<AlEntryFormPage> {
                             if (value == null || value.isEmpty) {
                                 return "Description tidak boleh kosong!";
                             }
-                            else if (value.length < 10 && value.length > 100) {
+                            if (value.length < 10 || value.length > 100) {
                                 return "Description harus dalam rentang 10 sampai 100 karakter!";
                             }
                         return null;
@@ -104,8 +104,8 @@ class _AlEntryFormPageState extends State<AlEntryFormPage> {
                             if (value == null || value.isEmpty) {
                                 return "Amount tidak boleh kosong!";
                             }
-                            if (int.tryParse(value) != null && int.tryParse(value)! < 0) {
-                                return "Amount tidak boleh negatif!";
+                            if (int.tryParse(value) != null && int.tryParse(value)! < 1) {
+                                return "Amount tidak boleh nol atau negatif!";
                             }
                             if (int.tryParse(value) == null) {
                                 return "Amount harus berupa angka!";
