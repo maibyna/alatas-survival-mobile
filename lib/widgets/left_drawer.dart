@@ -1,3 +1,4 @@
+import 'package:alatas_survival/screens/list_alentry.dart';
 import 'package:flutter/material.dart';
 import 'package:alatas_survival/screens/menu.dart';
 import 'package:alatas_survival/screens/alentry_form.dart';
@@ -64,6 +65,17 @@ class LeftDrawer extends StatelessWidget {
               );
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.shopping_cart_checkout),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+              // Route menu ke halaman mood
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AlEntryPage()),
+              );
+            },
+          )
         ],
       ),
     );
